@@ -28,3 +28,8 @@ git push||
 
 cd /home/r_hawken/University/TitanHons||
 git pull origin main ||
+
+
+---
+Created the file on github first and now want it on local PC. ||
+git clone git@github.com:rocket-rob-h/TitanHons.git ||
