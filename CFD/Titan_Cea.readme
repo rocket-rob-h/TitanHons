@@ -1,0 +1,29 @@
+--Lets have a go
+
+--This is the file that talks to CEA to get the chemistry for 0.98 N2, 0.02 CH4
+
+cea-titan-no-ar-with-ions-gas-model.lua
+
+-- this command prepares the cea-titan scheme input and then makes it into the output file. 
+-- needs to be in cea2 environment? exe - do i need to prep chem
+
+
+lmr prep-gas -i cea-titan-no-ar-with-ions-gas-model.lua -o cea-titan-2species.gas
+
+
+lmr prep-gas -i cea-titan-no-ar-with-ions-gas-model.lua -o cea-titan-no-ar-with-ions-gas-model.gas
+
+
+-- Now make the geometry and grid. 
+
+
+
+rchole@Intellegence:~/gdtk/My Titan Sims/First Sim$ lmr prep-gas -i cea-titan-no-ar-with-ions-gas-model.lua -o cea-titan-no-ar-with-ions-gas-model.gas
+Species database loaded from: 	/home/rchole/gdtkinst/data/species-database.lua
+There was a problem when trying to use prep-gas.
+lmrexceptions.LmrPreProcessingException@./commands/prepgas.d(99): attempt to index a nil value
+----------------
+./commands/prepgas.d:99 int lmr.commands.prepgas.main_(immutable(char)[][]) [0x57107ed3eddc]
+main.d:161 _Dmain [0x57107f114c4e]
+rchole@Intellegence:~/gdtk/My Titan Sims/First Sim$ 
+
